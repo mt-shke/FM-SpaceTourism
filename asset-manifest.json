@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.88644722.chunk.css",
+    "main.js": "/static/js/main.d28ee80c.chunk.js",
+    "main.js.map": "/static/js/main.d28ee80c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a3eeddfa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a3eeddfa.js.map",
+    "static/js/2.d7cb7563.chunk.js": "/static/js/2.d7cb7563.chunk.js",
+    "static/js/2.d7cb7563.chunk.js.map": "/static/js/2.d7cb7563.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.88644722.chunk.css.map": "/static/css/main.88644722.chunk.css.map",
+    "static/js/2.d7cb7563.chunk.js.LICENSE.txt": "/static/js/2.d7cb7563.chunk.js.LICENSE.txt",
+    "static/media/DestinationModel.module.css": "/static/media/image-mars.1b224c86.png",
+    "static/media/Home.module.css": "/static/media/background-home-mobile.13f7adec.jpg",
+    "static/media/Header.module.css": "/static/media/logo.565f7f2c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3eeddfa.js",
+    "static/js/2.d7cb7563.chunk.js",
+    "static/css/main.88644722.chunk.css",
+    "static/js/main.d28ee80c.chunk.js"
+  ]
+}
