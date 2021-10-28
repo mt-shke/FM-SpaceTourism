@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.f915a669.chunk.css",
-    "main.js": "/static/js/main.82912c55.chunk.js",
-    "main.js.map": "/static/js/main.82912c55.chunk.js.map",
+    "main.css": "/static/css/main.ae1e0ec8.chunk.css",
+    "main.js": "/static/js/main.129133b7.chunk.js",
+    "main.js.map": "/static/js/main.129133b7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a3eeddfa.js",
     "runtime-main.js.map": "/static/js/runtime-main.a3eeddfa.js.map",
     "static/js/2.8072fea0.chunk.js": "/static/js/2.8072fea0.chunk.js",
     "static/js/2.8072fea0.chunk.js.map": "/static/js/2.8072fea0.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.f915a669.chunk.css.map": "/static/css/main.f915a669.chunk.css.map",
+    "static/css/main.ae1e0ec8.chunk.css.map": "/static/css/main.ae1e0ec8.chunk.css.map",
     "static/js/2.8072fea0.chunk.js.LICENSE.txt": "/static/js/2.8072fea0.chunk.js.LICENSE.txt",
     "static/media/CrewModel.module.css": "/static/media/background-crew-tablet.16d51cf6.jpg",
     "static/media/DestinationModel.module.css": "/static/media/background-destination-tablet.8f55d346.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a3eeddfa.js",
     "static/js/2.8072fea0.chunk.js",
-    "static/css/main.f915a669.chunk.css",
-    "static/js/main.82912c55.chunk.js"
+    "static/css/main.ae1e0ec8.chunk.css",
+    "static/js/main.129133b7.chunk.js"
   ]
 }
