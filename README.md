@@ -1,9 +1,17 @@
+<details>
+<summary>Path
+</summary>
+
+```
 -design => set style var
 -structure => think about how to implement components
 -structure => html
 -structure => react, set logic
 -component => make it works, then style
 -loop => .
+```
+
+</details>
 
 <details>
 <summary>grid-column, clampWithVw, :not , inset
