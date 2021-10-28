@@ -181,7 +181,7 @@ export default function breakPointObserver(breakPoints, setBreakPoint) {
 
 <details>
 <summary>
-Others
+aria-selected, +others
 </summary>
 ```css
 
