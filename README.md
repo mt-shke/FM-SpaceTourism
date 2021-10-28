@@ -1,3 +1,10 @@
+-design => set style var
+-structure => think about how to implement components
+-structure => html
+-structure => react, set logic
+-component => make it works, then style
+-loop => .
+
 <details>
 <summary>grid-column, clampWithVw, :not , inset
 </summary>
@@ -22,10 +29,7 @@ margin-block-start:
 
 ```
 
-
 </details>
-
-
 
 <details>
 <summary>@supports css & backdrop-filter</summary>
@@ -180,8 +184,53 @@ export default function breakPointObserver(breakPoints, setBreakPoint) {
 </details>
 
 <details>
+<summary>:hover:after & centering :pseudo element
+</summary>
+
+```css
+.explore {
+	border-radius: 50%;
+	aspect-ratio: 1;
+	width: fit-content;
+	padding: 1.2rem;
+	margin: 0 auto;
+	transition: 2s;
+	position: relative;
+	z-index: 55;
+}
+
+.explore:hover {
+	transition: 2s ease-out;
+	transform: scale(150%);
+	cursor: pointer;
+}
+
+.explore:hover:after {
+	transform: scale(180%);
+	background-color: rgba(110, 110, 110, 0.452);
+}
+
+.explore:after {
+	transition: 1.5s;
+	content: "";
+	width: 8rem;
+	height: 8rem;
+	margin-top: -4rem;
+	margin-left: -4rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% -50%);
+	background-color: rgba(110, 110, 110, 0);
+}
+```
+
+</details>
+
+<details>
 <summary>
-aria-selected, +others
+Others
 </summary>
 ```css
 
