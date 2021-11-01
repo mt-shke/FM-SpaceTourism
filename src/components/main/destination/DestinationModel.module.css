@@ -1,0 +1,164 @@
+.destinationModel {
+	--img-url: url("../../../assets/destination/background-destination-mobile.jpg");
+	background-image: var(--img-url);
+	min-height: 100vh;
+}
+
+.container {
+	grid-template-rows: 12rem 5rem 13rem auto;
+	padding: 8rem 1rem 2rem;
+	margin: 0 auto;
+}
+
+.activeLink {
+	border-bottom: 2px solid white;
+	padding-bottom: 0.6rem;
+}
+
+.pic {
+	width: 11rem;
+	height: 9rem;
+}
+
+.container hr {
+	height: 1px;
+	width: 86%;
+	margin: 0 auto;
+	border: none;
+	opacity: 0.3;
+}
+
+.container footer {
+	flex-direction: column;
+}
+
+@media (min-width: 560px) {
+	.destinationModel {
+		--img-url: url("../../../assets/destination/background-destination-tablet.jpg");
+	}
+
+	.container {
+		padding: 10rem 4rem 2rem;
+		grid-template-rows: 10rem 5rem 13rem;
+	}
+
+	.pic {
+		width: 14rem;
+		height: 11rem;
+	}
+
+	.container header {
+		text-align: left;
+	}
+
+	.container footer {
+		--gap: 4rem;
+		margin: 0 auto;
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 769px) {
+	.destinationModel {
+		--img-url: url("../../../assets/destination/background-destination-desktop.jpg");
+	}
+	.container {
+		grid-template-columns: 46% 2rem 44%;
+		padding: 12rem 2rem 4rem;
+		grid-template-rows: 4rem 12rem 2rem 4rem;
+		grid-template-areas:
+			"head . list"
+			"head . main"
+			"head . hr"
+			"head . footer";
+		text-align: left;
+	}
+
+	.pic {
+		width: 20rem;
+		height: 18rem;
+	}
+
+	.container header {
+		grid-area: head;
+		gap: 4rem;
+	}
+
+	.container header h1 {
+		padding: 0 0 2rem 4rem;
+	}
+	.container ul {
+		grid-area: list;
+		margin: 0;
+		padding: 0;
+	}
+	.container main {
+		grid-area: main;
+		margin: 0;
+		padding: 0;
+	}
+	.container main h1 {
+		font-size: 5rem;
+	}
+	.container main p {
+		font-size: 1rem;
+	}
+
+	.container hr {
+		grid-area: hr;
+		margin: 0;
+	}
+	.container footer {
+		grid-area: footer;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container footer h3 {
+		font-size: 1.06rem;
+	}
+	.container footer span {
+		font-size: 1.4rem;
+	}
+}
+@media (min-width: 990px) {
+	.container {
+		padding: 14rem 0rem 4rem 4rem;
+		grid-template-rows: 5rem 14rem 3rem 5rem;
+		grid-template-columns: 45% 5% 40%;
+	}
+	.container main h1 {
+		font-size: 5rem;
+	}
+	.container main p {
+		font-size: 1.2rem;
+	}
+	.pic {
+		width: 24rem;
+		height: 20rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		padding: 14rem 0rem 4rem 4rem;
+
+		grid-template-columns: 50% 5% 40%;
+
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.container main p {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+	}
+	.container main h1 {
+		font-size: 7rem;
+	}
+
+	.pic {
+		width: 32rem;
+		height: 28rem;
+	}
+}

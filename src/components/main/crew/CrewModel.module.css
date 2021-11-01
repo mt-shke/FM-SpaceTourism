@@ -1,0 +1,177 @@
+.crew {
+	--bg-img: url("../../../assets/crew/background-crew-mobile.jpg");
+	background-image: var(--bg-img);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.container {
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 3rem 13rem 1rem 12rem;
+	padding: 6rem 1rem 2rem;
+	min-height: 100vh;
+	align-items: center;
+	text-align: center;
+}
+
+.container img {
+	width: 9rem;
+	height: 12rem;
+	margin: 0 auto;
+}
+
+.container hr {
+	height: 1px;
+	width: 80%;
+	margin: 0 auto;
+	border: none;
+	opacity: 0.2;
+}
+
+.slide {
+	margin: 0 auto;
+	padding: 0;
+}
+.slide li {
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+	background-color: grey;
+	outline: none;
+}
+
+.slide li:hover {
+	background-color: rgba(255, 255, 255, 0.808);
+	cursor: pointer;
+}
+
+.slide [aria-selected="true"] {
+	background-color: rgb(255, 255, 255);
+	outline: none;
+}
+
+@media (min-width: 560px) {
+	.crew {
+		--bg-img: url("../../../assets/crew/background-crew-tablet.jpg");
+	}
+
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 3rem 12rem 2rem auto;
+		padding: 8rem 2rem 0;
+		grid-template-areas:
+			"title title"
+			"infos infos"
+			"slide slider"
+			"img img";
+	}
+
+	.container > h1 {
+		grid-area: title;
+		margin: 0 auto 0 0;
+	}
+
+	.container > div {
+		height: 100%;
+		width: 100%;
+		grid-area: img;
+		margin-bottom: 0;
+	}
+	.container img {
+		width: 16rem;
+		height: 100%;
+		margin-bottom: 0;
+	}
+
+	.container .slide {
+		grid-area: slide;
+	}
+	.container > article {
+		grid-area: infos;
+		padding: 0 4rem;
+	}
+
+	.container hr {
+		display: none;
+	}
+}
+
+@media (min-width: 769px) {
+	.crew {
+		--bg-img: url("../../../assets/crew/background-crew-desktop.jpg");
+	}
+
+	.container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 10rem 14rem auto;
+		grid-template-areas:
+			"title img"
+			"infos img"
+			"slide img";
+		min-width: 100vw;
+		padding: 8rem 0 0 2rem;
+	}
+
+	.container img {
+		width: 18rem;
+		height: 24rem;
+		margin: 0 1rem;
+	}
+	.slide {
+		margin: 0 auto 0 0;
+	}
+	.container > article {
+		padding: 0;
+		text-align: left;
+	}
+	.container > article > * {
+		margin: 0 auto 0 0;
+		line-height: 1.6rem;
+	}
+
+	.container > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	.slide li {
+		width: 0.8rem;
+		height: 0.8rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.crew {
+		--bg-img: url("../../../assets/crew/background-crew-desktop.jpg");
+	}
+
+	.container {
+		max-width: 1200px;
+		grid-template-rows: 10rem 16rem auto;
+		padding: 8rem 2rem 0 6rem;
+	}
+	.container * {
+		font-size: 1.4rem;
+	}
+
+	.container > article > * {
+		margin-top: 1rem;
+		line-height: 2rem;
+		padding: 0;
+	}
+
+	.container > article > h1 {
+		font-size: 2.4rem;
+	}
+	.container img {
+		width: 24rem;
+		height: 32rem;
+		margin: 0 6rem;
+	}
+
+	.slide li {
+		width: 1rem;
+		height: 1rem;
+	}
+}

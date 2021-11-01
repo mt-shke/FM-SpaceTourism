@@ -1,0 +1,136 @@
+.home {
+	--img-url: url("../../assets/home/background-home-mobile.jpg");
+	background-image: var(--img-url);
+	min-height: 100vh;
+}
+
+.container {
+	grid-template-rows: 6rem 10rem 14rem;
+	padding: 8rem 1rem 1rem;
+}
+
+.container p {
+	line-height: 1.5rem;
+}
+
+.explore {
+	border-radius: 50%;
+	aspect-ratio: 1;
+	width: fit-content;
+	padding: 1.2rem;
+	margin: 0 auto;
+	transition: 2s;
+	position: relative;
+	z-index: 55;
+}
+
+.explore:hover {
+	transition: 2s ease-out;
+	transform: scale(150%);
+	cursor: pointer;
+}
+
+.explore:hover:after {
+	transform: scale(180%);
+	background-color: rgba(110, 110, 110, 0.452);
+}
+
+.explore:after {
+	transition: 1.5s;
+	content: "";
+	width: 8rem;
+	height: 8rem;
+	margin-top: -4rem;
+	margin-left: -4rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% -50%);
+	background-color: rgba(110, 110, 110, 0);
+}
+
+@media (min-width: 560px) {
+	.home {
+		--img-url: url("../../assets/home/background-home-tablet.jpg");
+	}
+
+	.container {
+		grid-template-rows: 7rem 10rem 16rem;
+		padding: 10rem 6rem 2rem;
+	}
+
+	.container p {
+		line-height: 1.5rem;
+		font-size: 1.1rem;
+	}
+
+	.explore {
+		padding: 1.8rem;
+	}
+}
+
+@media (min-width: 769px) {
+	.home {
+		--img-url: url("../../assets/home/background-home-desktop.jpg");
+	}
+
+	.container {
+		grid-template-rows: 50% 50%;
+		grid-template-columns: 50% 50%;
+		grid-template-areas:
+			"header expl"
+			"para  expl";
+		padding: 14rem calc(1rem + 5vw) 6rem;
+		text-align: left;
+	}
+
+	.container h1 {
+		grid-area: header;
+		font-size: 1.2rem;
+	}
+
+	.container p {
+		grid-area: para;
+		font-size: 1.2rem;
+		line-height: 1.9rem;
+	}
+
+	.explore {
+		padding: 2.5rem;
+		grid-area: expl;
+	}
+
+	.explore:after {
+		width: 8rem;
+		height: 8rem;
+		margin-top: -4rem;
+		margin-left: -4rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		padding: 14rem calc(2rem + 2%) 10rem calc(2rem + 8%);
+	}
+
+	.container h1 {
+		font-size: 2rem;
+	}
+
+	.container p {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+
+	.explore {
+		padding: 4rem;
+	}
+
+	.explore:after {
+		width: 10rem;
+		height: 10rem;
+		margin-top: -5rem;
+		margin-left: -5rem;
+	}
+}
