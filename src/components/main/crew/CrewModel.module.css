@@ -1,24 +1,25 @@
 .crew {
 	--bg-img: url("../../../assets/crew/background-crew-mobile.jpg");
 	background-image: var(--bg-img);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
 }
 .container {
 	display: grid;
 	margin: 0 auto;
-	grid-template-rows: 3rem 13rem 1rem 12rem;
+	grid-template-rows: 3rem 14rem 3rem 12rem;
 	padding: 6rem 1rem 2rem;
-	min-height: 100vh;
 	align-items: center;
+	min-height: 100vh;
 	text-align: center;
+	position: relative;
 }
 
 .container img {
 	width: 9rem;
 	height: 12rem;
-	margin: 0 auto;
+	margin: 2rem auto 0;
 }
 
 .container hr {
@@ -39,6 +40,8 @@
 	border-radius: 50%;
 	background-color: grey;
 	outline: none;
+	position: relative;
+	z-index: 30;
 }
 
 .slide li:hover {
@@ -60,6 +63,7 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 3rem 12rem 2rem auto;
 		padding: 8rem 2rem 0;
+		margin: 0 auto;
 		grid-template-areas:
 			"title title"
 			"infos infos"
@@ -79,9 +83,10 @@
 		margin-bottom: 0;
 	}
 	.container img {
-		width: 16rem;
+		width: 18rem;
 		height: 100%;
-		margin-bottom: 0;
+		padding-top: 2rem;
+		margin: 0 auto;
 	}
 
 	.container .slide {
@@ -97,26 +102,29 @@
 	}
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 	.crew {
 		--bg-img: url("../../../assets/crew/background-crew-desktop.jpg");
 	}
 
 	.container {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 10rem 14rem auto;
+		grid-template-rows: 10rem 14rem 6rem;
 		grid-template-areas:
 			"title img"
 			"infos img"
 			"slide img";
 		min-width: 100vw;
-		padding: 8rem 0 0 2rem;
+		padding: 8rem 5vw 2rem;
 	}
 
 	.container img {
-		width: 18rem;
-		height: 24rem;
-		margin: 0 1rem;
+		position: absolute;
+		bottom: 0;
+		right: 10vw;
+		width: 20rem;
+		height: 28rem;
+		margin: unset;
 	}
 	.slide {
 		margin: 0 auto 0 0;
@@ -148,8 +156,8 @@
 
 	.container {
 		max-width: 1200px;
-		grid-template-rows: 10rem 16rem auto;
-		padding: 8rem 2rem 0 6rem;
+		grid-template-rows: 14rem 20rem 6rem;
+		padding: 8rem 8vw 2rem;
 	}
 	.container * {
 		font-size: 1.4rem;
@@ -157,12 +165,12 @@
 
 	.container > article > * {
 		margin-top: 1rem;
-		line-height: 2rem;
+		line-height: 1.8rem;
 		padding: 0;
 	}
 
 	.container > article > h1 {
-		font-size: 2.4rem;
+		font-size: 2.6rem;
 	}
 	.container img {
 		width: 24rem;

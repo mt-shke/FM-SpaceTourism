@@ -275,7 +275,8 @@ select {
 	width: 100%;
 	height: 100%;
 }
------------------ */ .bg-center-cover-nr {
+
+.bg-center-cover-nr {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;

@@ -24,7 +24,7 @@ const Home = () => {
 				</p>
 
 				<div
-					className={`${css.explore} grid uppercase fs-500 ff-serif bg-white text-dark`}
+					className={`${css.explore} grid uppercase fs-700 ff-serif bg-white text-dark`}
 					onClick={locationHandler}
 				>
 					Explore

@@ -24,7 +24,7 @@ const TechnologyModel = (props) => {
 	};
 
 	return (
-		<article className={`${css.technology} grid`}>
+		<article className={`${css.technology} bg-center-cover-nr`}>
 			<div className={css.container}>
 				<h1 className="fs-300 uppercase text-light letter-spacing-3">
 					<span className="text-ldark">03</span> Space Launch 101

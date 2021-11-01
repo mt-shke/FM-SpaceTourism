@@ -23,7 +23,7 @@ const CrewModel = (props) => {
 	};
 
 	return (
-		<article className={`${css.crew}`}>
+		<article className={`${css.crew} bg-center-cover-nr`}>
 			<div className={css.container}>
 				<h1 className=" fs-300 uppercase text-light letter-spacing-3">
 					<span className="text-ldark">02</span> Meet your crew

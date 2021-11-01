@@ -2,11 +2,15 @@
 	--img-url: url("../../assets/home/background-home-mobile.jpg");
 	background-image: var(--img-url);
 	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	margin: 0 auto;
 }
 
 .container {
-	grid-template-rows: 6rem 10rem 14rem;
-	padding: 8rem 1rem 1rem;
+	grid-template-rows: 6rem 11rem 12rem;
+	padding: 7rem 1rem 1rem;
 }
 
 .container p {
@@ -17,7 +21,7 @@
 	border-radius: 50%;
 	aspect-ratio: 1;
 	width: fit-content;
-	padding: 1.2rem;
+	padding: 1rem;
 	margin: 0 auto;
 	transition: 2s;
 	position: relative;
@@ -26,12 +30,12 @@
 
 .explore:hover {
 	transition: 2s ease-out;
-	transform: scale(150%);
+	transform: scale(120%);
 	cursor: pointer;
 }
 
 .explore:hover:after {
-	transform: scale(180%);
+	transform: scale(130%);
 	background-color: rgba(110, 110, 110, 0.452);
 }
 
@@ -66,22 +70,29 @@
 	}
 
 	.explore {
-		padding: 1.8rem;
+		padding: 1.2rem;
+	}
+
+	.explore:after {
+		width: 12rem;
+		height: 12rem;
+		margin-top: -6rem;
+		margin-left: -6rem;
 	}
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 	.home {
 		--img-url: url("../../assets/home/background-home-desktop.jpg");
 	}
 
 	.container {
-		grid-template-rows: 50% 50%;
-		grid-template-columns: 50% 50%;
+		grid-template-rows: 16rem 10rem;
+		grid-template-columns: auto auto;
 		grid-template-areas:
-			"header expl"
+			"header  expl"
 			"para  expl";
-		padding: 14rem calc(1rem + 5vw) 6rem;
+		padding: 14rem 4rem 6rem;
 		text-align: left;
 	}
 
@@ -93,44 +104,50 @@
 	.container p {
 		grid-area: para;
 		font-size: 1.2rem;
-		line-height: 1.9rem;
+		line-height: 2.4rem;
+		width: 45vw;
 	}
 
 	.explore {
-		padding: 2.5rem;
+		padding: 1rem;
 		grid-area: expl;
 	}
 
 	.explore:after {
-		width: 8rem;
-		height: 8rem;
-		margin-top: -4rem;
-		margin-left: -4rem;
+		width: 15rem;
+		height: 15rem;
+		margin-top: -7.5rem;
+		margin-left: -7.5rem;
 	}
 }
 
 @media (min-width: 1200px) {
 	.container {
-		padding: 14rem calc(2rem + 2%) 10rem calc(2rem + 8%);
+		max-width: 1920px;
+		padding: 14rem 10rem 4rem 8rem;
+		grid-template-columns: auto auto;
 	}
 
 	.container h1 {
-		font-size: 2rem;
+		font-size: 1.6rem;
+	}
+	.container h1 span {
+		margin: 1rem 0;
 	}
 
 	.container p {
-		font-size: 2rem;
+		font-size: 1.7rem;
 		line-height: 3rem;
 	}
 
 	.explore {
-		padding: 4rem;
+		padding: 3rem;
 	}
 
 	.explore:after {
-		width: 10rem;
-		height: 10rem;
-		margin-top: -5rem;
-		margin-left: -5rem;
+		width: 24rem;
+		height: 24rem;
+		margin-top: -12rem;
+		margin-left: -12rem;
 	}
 }
