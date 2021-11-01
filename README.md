@@ -238,12 +238,18 @@ export default function breakPointObserver(breakPoints, setBreakPoint) {
 
 <details>
 <summary>
-Others
+li[aria-selected="true"], src={public url} in react
 </summary>
 ```css
 
-.slide [aria-selected="true"] {
+.slide li:hover {
+background-color: rgba(117, 117, 117, 0.473);
+cursor: pointer;
+}
+.slide li:active,
+.slide li[aria-selected="true"] {
 background-color: rgb(255, 255, 255);
+color: black;
 }
 
 ````
