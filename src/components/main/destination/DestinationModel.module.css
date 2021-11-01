@@ -5,8 +5,8 @@
 }
 
 .container {
-	grid-template-rows: 12rem 5rem 13rem auto;
-	padding: 8rem 1rem 2rem;
+	grid-template-rows: 12rem 3rem 11rem auto;
+	padding: 6rem 1rem 2rem;
 	margin: 0 auto;
 }
 
@@ -130,35 +130,45 @@
 	.container main h1 {
 		font-size: 5rem;
 	}
+
 	.container main p {
 		font-size: 1.2rem;
 	}
 	.pic {
-		width: 24rem;
+		width: 23rem;
 		height: 20rem;
 	}
 }
 
 @media (min-width: 1200px) {
 	.container {
-		padding: 14rem 0rem 4rem 4rem;
-
-		grid-template-columns: 50% 5% 40%;
-
-		max-width: 1200px;
+		padding: 12rem 0rem 1rem 4rem;
+		grid-template-columns: 50% 2vw 30vw;
+		grid-template-rows: auto auto auto auto;
+		max-width: 1920px;
 		margin: 0 auto;
 	}
 
+	.container header h1 {
+		font-size: 2rem;
+		letter-spacing: 0.2rem;
+	}
+
+	.container ul {
+		font-size: 1.3rem;
+		gap: 2rem;
+	}
+
 	.container main p {
-		font-size: 1.2rem;
-		line-height: 1.6rem;
+		font-size: 1.3rem;
+		line-height: 2.4rem;
 	}
 	.container main h1 {
 		font-size: 7rem;
 	}
 
 	.pic {
-		width: 32rem;
+		width: 30rem;
 		height: 28rem;
 	}
 }

@@ -8,7 +8,7 @@
 
 .container {
 	display: grid;
-	grid-template-rows: 2rem 12rem 5rem auto;
+	grid-template-rows: auto;
 	grid-template-columns: 1fr;
 	padding: 6rem 0rem 2rem;
 	min-height: 100vh;
@@ -28,13 +28,13 @@
 }
 
 .container div p {
-	/* line-height: 1.4rem;
-	font-size: 1.2rem; */
+	line-height: 1.2rem;
+	font-size: 1.1rem;
 }
 
-.container__img {
+/* .container__img {
 	margin: 0.4rem auto;
-}
+} */
 
 .slide {
 	margin: 0 auto;
@@ -51,7 +51,8 @@
 }
 
 .slide li:hover {
-	background-color: rgba(117, 117, 117, 0.473);
+	color: white;
+	border-color: white;
 	cursor: pointer;
 }
 .slide li:active,
@@ -65,7 +66,7 @@
 		--bg-img: url("/src/assets/technology/background-technology-tablet.jpg");
 	}
 	.container {
-		grid-template-rows: 3rem 18rem 5rem auto;
+		grid-template-rows: auto;
 		grid-template-columns: 1fr;
 	}
 
@@ -154,25 +155,24 @@
 		line-height: 1.8rem;
 		font-size: 1.4rem;
 	}
+
+	.slide {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	.slide li {
+		width: 4rem;
+		height: 4rem;
+	}
 }
 
 @media (min-width: 1200px) {
 	.container {
-		grid-template-rows: 4rem 14rem 12rem;
-		padding: 12rem 0rem 2rem 2rem;
-		max-width: 1920px;
-		margin: 0 auto;
-	}
-
-	.container div p {
-		line-height: 1.6rem;
-		font-size: 1.4rem;
-	}
-}
-@media (min-width: 1200px) {
-	.container {
-		grid-template-rows: 4rem 12rem 16rem;
-		padding: 12rem 0rem 8rem 2rem;
+		grid-template-columns: 10% 50% auto;
+		grid-template-rows: 4rem 20rem 16rem;
+		padding: 10rem 0rem 4rem 4vw;
 		max-width: 1920px;
 		margin: 0 auto;
 	}
@@ -182,6 +182,7 @@
 	}
 	.container > h1 {
 		margin-left: 4rem;
+		font-size: 2rem;
 	}
 
 	.container__img {
@@ -189,18 +190,22 @@
 	}
 
 	.container__infos {
-		padding: 4rem 2rem 2rem 0;
-	}
-	.slide li {
-		width: 4rem;
-		height: 4rem;
+		padding: 8rem 8rem 8rem 2rem;
 	}
 
+	.slide li {
+		width: 5rem;
+		height: 5rem;
+	}
+	.container div {
+		overflow: hidden;
+	}
 	.container div h1 {
-		font-size: 3rem;
+		font-size: 4rem;
+		white-space: nowrap;
 	}
 	.container div p {
 		line-height: 2.4rem;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 }

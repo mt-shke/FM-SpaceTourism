@@ -8,7 +8,7 @@
 .container {
 	display: grid;
 	margin: 0 auto;
-	grid-template-rows: 3rem 14rem 3rem 12rem;
+	grid-template-rows: 3rem 14rem 4rem 14rem;
 	padding: 6rem 1rem 2rem;
 	align-items: center;
 	min-height: 100vh;
@@ -52,6 +52,10 @@
 .slide [aria-selected="true"] {
 	background-color: rgb(255, 255, 255);
 	outline: none;
+}
+
+.container > article > p {
+	line-height: 1.2rem;
 }
 
 @media (min-width: 560px) {
@@ -108,7 +112,7 @@
 	}
 
 	.container {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 36vw auto;
 		grid-template-rows: 10rem 14rem 6rem;
 		grid-template-areas:
 			"title img"
@@ -121,9 +125,9 @@
 	.container img {
 		position: absolute;
 		bottom: 0;
-		right: 10vw;
-		width: 20rem;
-		height: 28rem;
+		right: 4vw;
+		width: 28rem;
+		height: 36rem;
 		margin: unset;
 	}
 	.slide {
@@ -160,7 +164,7 @@
 		padding: 8rem 8vw 2rem;
 	}
 	.container * {
-		font-size: 1.4rem;
+		font-size: 1.7rem;
 	}
 
 	.container > article > * {
@@ -170,11 +174,16 @@
 	}
 
 	.container > article > h1 {
-		font-size: 2.6rem;
+		font-size: 2.2rem;
 	}
+
+	.container > article > p {
+		line-height: 2.2rem;
+	}
+
 	.container img {
-		width: 24rem;
-		height: 32rem;
+		height: 80vh;
+		width: auto;
 		margin: 0 6rem;
 	}
 

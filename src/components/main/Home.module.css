@@ -9,7 +9,7 @@
 }
 
 .container {
-	grid-template-rows: 6rem 11rem 12rem;
+	grid-template-rows: 7rem auto;
 	padding: 7rem 1rem 1rem;
 }
 
@@ -87,12 +87,13 @@
 	}
 
 	.container {
-		grid-template-rows: 16rem 10rem;
-		grid-template-columns: auto auto;
+		grid-template-rows: 14rem 8rem;
+
+		grid-template-columns: 40vw 10vw 20vw;
 		grid-template-areas:
-			"header  expl"
-			"para  expl";
-		padding: 14rem 4rem 6rem;
+			"header . expl"
+			"para . expl";
+		padding: 40vh 4rem 6rem;
 		text-align: left;
 	}
 
@@ -103,9 +104,8 @@
 
 	.container p {
 		grid-area: para;
-		font-size: 1.2rem;
-		line-height: 2.4rem;
-		width: 45vw;
+		font-size: 1rem;
+		line-height: 1.8rem;
 	}
 
 	.explore {
@@ -114,40 +114,42 @@
 	}
 
 	.explore:after {
-		width: 15rem;
-		height: 15rem;
-		margin-top: -7.5rem;
-		margin-left: -7.5rem;
+		width: 16rem;
+		height: 16rem;
+		margin-top: -8rem;
+		margin-left: -8rem;
 	}
 }
 
 @media (min-width: 1200px) {
 	.container {
+		grid-template-rows: 16rem 10rem;
 		max-width: 1920px;
-		padding: 14rem 10rem 4rem 8rem;
-		grid-template-columns: auto auto;
+		padding: 22rem 10rem 4rem;
+		grid-template-columns: 30vw auto 20vw;
 	}
 
 	.container h1 {
-		font-size: 1.6rem;
+		font-size: 2rem;
 	}
 	.container h1 span {
+		font-size: 11rem;
 		margin: 1rem 0;
 	}
 
 	.container p {
-		font-size: 1.7rem;
-		line-height: 3rem;
+		font-size: 1.2rem;
+		line-height: 2.4rem;
 	}
 
 	.explore {
-		padding: 3rem;
+		padding: 2rem;
 	}
 
 	.explore:after {
-		width: 24rem;
-		height: 24rem;
-		margin-top: -12rem;
-		margin-left: -12rem;
+		width: 20rem;
+		height: 20rem;
+		margin-top: -10rem;
+		margin-left: -10rem;
 	}
 }
