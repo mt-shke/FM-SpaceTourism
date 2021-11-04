@@ -3,14 +3,35 @@
 </summary>
 
 ```
--design => set style var
+-design => set style, global var, utility classes
+- . 
 -structure => think about how to implement components
--structure => html
--structure => react, set logic
--component => make it works, then style
+-structure => html, layout
+-structure => react, set logic, then final style
 -loop => .
 ```
 
+</details>
+
+<details>
+<summary>li[aria-selected="true"] && .active
+</summary>
+
+```css
+	
+.slide li:hover {
+background-color: rgba(117, 117, 117, 0.473);
+cursor: pointer;
+}
+
+.slide li:active,
+.slide li[aria-selected="true"] {
+background-color: rgb(255, 255, 255);
+color: black;
+}
+
+```
+	
 </details>
 
 <details>
@@ -20,19 +41,18 @@
 ```css
     .grid-container > *:first-child {
         grid-column: 2;
-
-.underline-indicators > [aria-selected="true"] {
-color: hsl( var(--clr-white) / 1);
-
+}
+	
 --gap: clamp(1.5rem, 5vw, 3.5rem);
 
-margin-block-start:
+margin-block-start: 
 
+	
 .grid-container p:not([class]) {
 
 --gap: min(6vw, 6rem);
 
-    inset: 0 0 0 30%;
+inset: 0 0 0 30%;
 
 
 ```
@@ -237,26 +257,14 @@ export default function breakPointObserver(breakPoints, setBreakPoint) {
 </details>
 
 <details>
-<summary>
-li[aria-selected="true"], src={public url} in react
+<summary>src={public url} dynamic url in react
 </summary>
-```css
 
-.slide li:hover {
-background-color: rgba(117, 117, 117, 0.473);
-cursor: pointer;
-}
-.slide li:active,
-.slide li[aria-selected="true"] {
-background-color: rgb(255, 255, 255);
-color: black;
-}
-
-````
 
 ```js
 
-import img
+import img...
+	
 src require
 src={/asset/...}
 ````
